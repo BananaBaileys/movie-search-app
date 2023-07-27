@@ -63,6 +63,7 @@ const App = () => {
                         <h3>{movie1.Title}</h3>
                     </div>
 
+
                 </div>
             </div>
 
