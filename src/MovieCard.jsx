@@ -21,6 +21,9 @@ const MovieCard = () => {
             </div>
 
         </div>
-        
-    )
+
+    );
 }
+
+
+export default MovieCard;
