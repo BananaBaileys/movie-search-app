@@ -31,7 +31,8 @@ const App = () => {
         const response = await fetch('${API_URL}&s=${title}');  //call api  
         const data = await response.json();     // get the data from it
 
-        console.log(data.search);
+        //console.log(data.search);
+        setMovies(data.search);
     }
     useEffect(() => {
         searchMovies('Spiderman');
