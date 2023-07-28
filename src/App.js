@@ -50,7 +50,10 @@ const App = () => {
             </div>
 
             <div className="container">
-                <div className="movie">
+                
+                <MovieCard />
+                
+                {/* <div className="movie">
                     <div>
                         <p>{movie1.Year}</p>
                     </div>
@@ -65,7 +68,7 @@ const App = () => {
                     </div>
 
 
-                </div>
+                </div> */}
             </div>
 
         </div>
