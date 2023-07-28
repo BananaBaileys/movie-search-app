@@ -4,7 +4,7 @@ import React from 'react';
 // not required 
 
 
-const MovieCard = () => {
+const MovieCard = ( { movie1 }) => {
     return (
          <div className="movie">
             <div>
