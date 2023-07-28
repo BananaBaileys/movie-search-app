@@ -57,27 +57,45 @@ const App = () => {
                 />
             </div>
 
-            <div className="container">
+            {
+            // if there are movies, if there aren't movies then render h2: No movies found
+            }
+
+            {
+                movies?.length > 0
+                ? (
+
+                    <div className="container">
+                    
+                        <MovieCard movie1={movie1} />
+                    
+                        {/* <div className="movie">
+                        <div>
+                            <p>{movie1.Year}</p>
+                        </div>
+
+                        <div>
+                            <img src={movie1.Poster !== 'N/A' ? movie1.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
+                        </div>
+
+                        <div>
+                            <span>{movie1.Type}</span>
+                            <h3>{movie1.Title}</h3>
+                        </div>
+                        </div> */}
+                    </div>
                 
-                <MovieCard movie1={movies[0]} />
-                
-                {/* <div className="movie">
-                    <div>
-                        <p>{movie1.Year}</p>
+                ) : (
+                    <div className ="empty">
+                    <h2>No movies found</h2>
                     </div>
+                )
 
-                    <div>
-                        <img src={movie1.Poster !== 'N/A' ? movie1.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
-                    </div>
-
-                    <div>
-                        <span>{movie1.Type}</span>
-                        <h3>{movie1.Title}</h3>
-                    </div>
+            }
 
 
-                </div> */}
-            </div>
+
+            
 
         </div>
     );
