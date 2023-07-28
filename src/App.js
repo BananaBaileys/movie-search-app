@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import MovieCard from './MovieCard';
 
@@ -6,6 +6,7 @@ import './App.css';
 import SearchIcon from './search.svg';
 
 //27566bf4
+
 
 const API_URL = 'http://www.omdbapi.com?apikey=27566bf4'
 
@@ -17,7 +18,13 @@ const movie1 = { /*movie example*/
     "Poster": "N/A"
 }
 
+
+
 const App = () => {
+
+
+    // getting movies from console log to moviecard so we can map over them
+    const [movies, setMovies ]= useState([]);
 
     // to fetch movies
     const searchMovies = async (title) => {
